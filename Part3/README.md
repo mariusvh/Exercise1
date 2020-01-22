@@ -29,18 +29,18 @@ increasing overall speed.
 - Can be ran in parallel
 - High memory overhead
 - The time overhead for creating and context switching between processes is pretty high
-Threads:
+>Threads:
 - managed by OS
 - Each thread is "contained" within some particular process
 - All threads in the same process share virtual address space
 - Can be interrupted by the system to allow another thread to run
 - Can be ran in parallel with other threads
 - The memory and time overheads associated with threads are smaller than processes, but not negligible.
-Green threads:
+>Green threads:
 - User-space projections of the same concept as threads, but not managed by OS.
 - Probably not truly concurrent, except in the sense that there may be multiple worker threads or processes giving them CPU time concurrently,
 so probably best to consider this as interleaved or multiplexed.
-Coroutines:
+>Coroutines:
 - Not managed by OS.
 - Exactly threads, except co-operatively multitasking, and hence not truly concurrent.
  
